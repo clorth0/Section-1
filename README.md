@@ -36,7 +36,6 @@ This Python script enriches and prioritizes vulnerabilities from scan data using
 
 ## Example Usage
 
-```bash
 python3 vuln-eval.py TVM_-_Section_-_1.csv
 
 ## Dependencies
@@ -46,6 +45,7 @@ python3 vuln-eval.py TVM_-_Section_-_1.csv
 * requests
 
 ### Install Required Packages
+
 pip install pandas requests
 
 ## Error Handling
