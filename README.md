@@ -38,3 +38,25 @@ This Python script enriches and prioritizes vulnerabilities from scan data using
 
 ```bash
 python3 vuln-eval.py TVM_-_Section_-_1.csv
+
+## Dependencies
+
+* Python 3.7+
+* pandas
+* requests
+
+### Install Required Packages
+pip install pandas requests
+
+## Error Handling
+
+* File and input validation: Confirms that input CSV exists and has required structure.
+* EPSS API requests: Errors are caught and logged per-CVE, and a default score of 0.0 is applied if a request fails.
+* CISA KEV catalog download: If the feed cannot be fetched, enrichment continues with defaults, and a warning is printed.
+* NVD API lookup: If the NVD API fails or a CVE is not found, the script gracefully falls back to severity-based remediation recommendations.
+* Rate limiting: Complies with NVD’s public API rate limits (maximum 5 requests per 30 seconds) using time.sleep.
+
+## Notes
+* If a CVE is not found in the KEV catalog, the title will be marked as "Not Found in KEV catalog".
+* The script does not require API keys, but support can be added easily.
+* For large datasets, NVD API rate limiting may increase runtime. A key-based approach is recommended for scale.
