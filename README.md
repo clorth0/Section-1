@@ -1,11 +1,13 @@
 # Vulnerability Enrichment and Risk Prioritization Script
 
 Scenario:
+
 Your company uses Qualys/Tenable/Nessus etc for vulnerability scanning. The security team
 has exported a CSV file containing vulnerability scan results, but they need a risk-based
 prioritization strategy to focus on the most critical vulnerabilities first.
 
 Task:
+
 Write a Python script that...
 * Parses a CSV file containing vulnerability scan results (mock data provided).
 * Prioritizes vulnerabilities based on CVSS score, exploitability (e.g. EPSS), and
