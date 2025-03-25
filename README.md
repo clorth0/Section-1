@@ -15,9 +15,7 @@ asset criticality.
 * Outputs a ranked list of top 10 vulnerabilities requiring immediate remediation.
 * Provides a remediation recommendation for each critical vulnerability.
 
-## Features
-
-This Python script enriches and prioritizes vulnerabilities from scan data using a combination of real-time threat intelligence sources. It is designed to support technical assessment workflows and security automation efforts.
+## Overview
 
 - Accepts CSV input with vulnerability scan data (CVE ID, CVSS Score, Asset Criticality)
 - Fetches EPSS (Exploit Prediction Scoring System) scores via FIRST.org API
