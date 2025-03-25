@@ -86,4 +86,4 @@ pip install pandas requests
 ## Notes
 * If a CVE is not found in the KEV catalog, the title will be marked as "Not Found in KEV catalog".
 * The script does not require API keys, but support can be added easily.
-* For large datasets, NVD API rate limiting may increase runtime. A key-based approach is recommended for scale.
+* For large datasets, NVD API rate limiting may increase runtime.
