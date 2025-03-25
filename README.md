@@ -1,8 +1,13 @@
 # Vulnerability Enrichment and Risk Prioritization Script
 
-This Python script enriches and prioritizes vulnerabilities from scan data using a combination of real-time threat intelligence sources. It is designed to support technical assessment workflows and security automation efforts.
+Scenario:
+Your company uses Qualys/Tenable/Nessus etc for vulnerability scanning. The security team
+has exported a CSV file containing vulnerability scan results, but they need a risk-based
+prioritization strategy to focus on the most critical vulnerabilities first.
 
 ## Features
+
+This Python script enriches and prioritizes vulnerabilities from scan data using a combination of real-time threat intelligence sources. It is designed to support technical assessment workflows and security automation efforts.
 
 - Accepts CSV input with vulnerability scan data (CVE ID, CVSS Score, Asset Criticality)
 - Fetches EPSS (Exploit Prediction Scoring System) scores via FIRST.org API
