@@ -5,6 +5,13 @@ Your company uses Qualys/Tenable/Nessus etc for vulnerability scanning. The secu
 has exported a CSV file containing vulnerability scan results, but they need a risk-based
 prioritization strategy to focus on the most critical vulnerabilities first.
 
+Write a Python script that:
+* Parses a CSV file containing vulnerability scan results (mock data provided).
+* Prioritizes vulnerabilities based on CVSS score, exploitability (e.g. EPSS), and
+asset criticality.
+* Outputs a ranked list of top 10 vulnerabilities requiring immediate remediation.
+* Provides a remediation recommendation for each critical vulnerability.
+
 ## Features
 
 This Python script enriches and prioritizes vulnerabilities from scan data using a combination of real-time threat intelligence sources. It is designed to support technical assessment workflows and security automation efforts.
