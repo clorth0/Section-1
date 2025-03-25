@@ -47,7 +47,21 @@ asset criticality.
 - `kev_catalog_<YYYY-MM-DD>.json`: Cached copy of the CISA KEV catalog
 - Terminal output: Prints the top 10 vulnerabilities by calculated risk score
 
-## Example Usage
+## Usage
+
+1. Create Virtual Environment
+
+python3 -m venv venv
+
+2. Activate Virtual Environment
+
+source venv/bin/activate
+
+3. Install Required Packages
+
+pip install pandas requests
+
+5. Run Script
 
 python3 vuln-eval.py TVM_-_Section_-_1.csv
 
